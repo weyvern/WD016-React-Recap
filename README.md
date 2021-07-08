@@ -5,6 +5,7 @@
 [x] Rendering components
 [x] Props
 [x] Synthetic events
-[] State (with hooks)
-[] Effects (with hooks)
-[] API requests within a React component
+[x] State (with hooks)
+[x] Controlled/Uncontrolled components
+[x] Effects (with hooks)
+[x] API requests within a React component

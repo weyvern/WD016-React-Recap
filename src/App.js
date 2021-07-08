@@ -1,13 +1,23 @@
-import User from './components/User';
+import { Switch, Route, Link } from 'react-router-dom';
+import Form from './components/Form';
+import Users from './components/Users';
 
 const App = () => {
-  const logAge = age => {
-    console.log(age);
-  };
   return (
-    <div>
-      <User firstName='Jorge' lastName='Paul' age={31} logAge={logAge} />
-    </div>
+    <>
+      <ul>
+        <li>
+          <Link to='/'>Form</Link>
+        </li>
+        <li>
+          <Link to='/users'>Users</Link>
+        </li>
+      </ul>
+      <Switch>
+        <Route exact path='/' component={Form} />
+        <Route exact path='/users' component={Users} />
+      </Switch>
+    </>
   );
 };
 
